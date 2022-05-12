@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-05-12 周四 06:22 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org297c772">1. direct c-x d</a></li>
+<li><a href="#orgdda8c36">2. 窗口缓冲区</a>
+<ul>
+<li><a href="#org61a907c">2.1. 行数</a></li>
+</ul>
+</li>
+<li><a href="#org50a2dfe">3. org-mode</a>
+<ul>
+<li><a href="#org83eec6f">3.1. org-capture</a>
+<ul>
+<li><a href="#org9481177">3.1.1. 链接</a></li>
+<li><a href="#org4ed903d">3.1.2. 使用链接</a></li>
+</ul>
+</li>
+<li><a href="#orgd5f84c2">3.2. 目标链接</a></li>
+</ul>
+</li>
+<li><a href="#orgb1f4fa8">4. GTD</a></li>
+<li><a href="#org87383ea">5. 键盘宏</a></li>
+<li><a href="#org2802afc">6. 转化</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org297c772" class="outline-2">
+<h2 id="org297c772"><span class="section-number-2">1</span> direct c-x d</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+q 退出
+g 刷新
+u 移除标记
+</p>
+<ul class="org-ul">
+<li>新建文件夹</li>
+</ul>
+<p>
+R 重命名
+v 阅读
+C 拷贝
+m 标记文件
+e 编辑
+</p>
+</div>
+</div>
+<div id="outline-container-orgdda8c36" class="outline-2">
+<h2 id="orgdda8c36"><span class="section-number-2">2</span> 窗口缓冲区</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+ctrl-x i 插入文件
+ctrl-x k 关闭当前缓冲区
+c+@ 标记开始
+c-x h 全选
+c-x 4 b name 无关缓冲区 
+c-x 5 b name 文件缓冲区
+M-x clone indirect buffer 间接缓冲区
+c-x left/right 切换缓冲区
+2 是垂直均分
+3 是水平均分
+c-x 4 b name
+c-x 5 b name
+c-w 切除
+alt-w 复制
+C-y 粘贴
+</p>
+</div>
+<div id="outline-container-org61a907c" class="outline-3">
+<h3 id="org61a907c"><span class="section-number-3">2.1</span> 行数</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+c-c c-n/p 上下标题
+c-c c-u 上一级标题
+c-c c-j 跳转到大纲浏览状态
+c-c * 将本行设为标题、正文
+c-c c-x f  脚注
+c-c c-x p 属性
+c-u r 搜索tag
+m-% 查抄替换
+c-r 进入修改
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org50a2dfe" class="outline-2">
+<h2 id="org50a2dfe"><span class="section-number-2">3</span> org-mode</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+任务管理
+表格制作
+快速笔记
+</p>
+
+
+<p>
+引用文字
+</p>
+</div>
+
+<div id="outline-container-org83eec6f" class="outline-3">
+<h3 id="org83eec6f"><span class="section-number-3">3.1</span> org-capture</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-org9481177" class="outline-4">
+<h4 id="org9481177"><span class="section-number-4">3.1.1</span> 链接</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<p>
+org-store-link
+org-insert-link
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org4ed903d" class="outline-4">
+<h4 id="org4ed903d"><span class="section-number-4">3.1.2</span> 使用链接</h4>
+<div class="outline-text-4" id="text-3-1-2">
+<p>
+Org 提供了以下方法来创建和使用链接。
+M-x org-store-link
+C-c m-l  最后一个链接
+C-c C-l 插入一个链接。它会让你输入，你可以输入一个链接，也可心用上/下键来获取保存的链接。它还会让你输入描述信息。
+C-c C-l（光标在链接上） 当光标处于链接上时，你可以修改链接
+C-c C-o 或者 mouse-1 或者 mouse-2 打开链接
+C-c &amp; 跳回到一个已记录的地址。用 C-c % 可以将地址记录下来，内部链接后面的命令也会自动将地址记录下来。使用这个命令多次可以一直往前定位。
+</p>
+
+
+<p>
+[[]] 双括号
+ 如果一个链接地址并不是 URL 的形式，就会作为当前文件内部链接来处理。
+</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div id="outline-container-orgd5f84c2" class="outline-3">
+<h3 id="orgd5f84c2"><span class="section-number-3">3.2</span> 目标链接</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+文件链接可以包含一些其他信息使得进入链接时可以到达特定的位置。比如双冒号之后的一个行号或者搜索选项。
+</p>
+
+<p>
+下面是一些包含搜索定位功能的链接例子以及其说明：
+</p>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-orgb1f4fa8" class="outline-2">
+<h2 id="orgb1f4fa8"><span class="section-number-2">4</span> GTD</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+C-c C-t todo
+</p>
+<pre class="example">
+&lt;2019-03-11 周一&gt;
+</pre>
+
+<p>
+c-c c-x 时间倒计时
+C-c C-s
+C-c a
+</p>
+</div>
+</div>
+
+<div id="outline-container-org87383ea" class="outline-2">
+<h2 id="org87383ea"><span class="section-number-2">5</span> 键盘宏</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+f3开始f4结束
+"C-x e" 执行一次
+"C-u 执行次数 C-x e" 将会执行设定的次数遍，也可以用 "C-执行次数 C-x e"
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org2802afc" class="outline-2">
+<h2 id="org2802afc"><span class="section-number-2">6</span> 转化</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+C-c C-e
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2022-05-12 周四 06:22</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
